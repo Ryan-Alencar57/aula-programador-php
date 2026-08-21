@@ -11,3 +11,15 @@ $mensagem = match ($condicaoAtual){
     default => "situação invalida verifique pessoalmente com o atendente"
 };
 echo "<p>{$mensagem}</p>";
+
+$primeiroNome = "Ryan";
+$sobrenome = "Alencar";
+$primeiroNome .= $sobrenome;
+ var_dump($primeiroNome);
+
+$numero = 10;
+var_dump($numero);
+$numero = $numero -3;
+var_dump($numero);
+$numero = $numero -3;
+var_dump($numero);
