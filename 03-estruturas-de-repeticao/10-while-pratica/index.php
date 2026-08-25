@@ -11,14 +11,16 @@ while ($senhaDigitada !== $senhaCorreta && $tentativas < 3) {
 
     // simulando uma nova tentativa (num sistema real, viria de um formulário)
     $senhaDigitada = "1234";
-    die;
+    
 }
 
 if ($tentativas >= 3) {
     echo "Conta bloqueada por excesso de tentativas.";
 }
+ if ($senhaDigitada = $senhaCorreta){
+    echo "<p>Bem vindo a sua conta!</p>";
+ }
 
-echo "<p>Bem vindo a sua conta!</p>";
 
 
 
@@ -33,3 +35,11 @@ while ($estoqueAtual > 0) {
 }
 
 echo "Estoque esgotado após $vendasRealizadas vendas.";
+
+$filaAtendimento = 3;
+$pessoasRestante = 0;
+
+while($filaAtendimento !== $pessoasRestante){
+    $filaAtendimento--;
+    echo "<p>faltam {$filaAtendimento} pessoas na sua frente</p>";
+}
