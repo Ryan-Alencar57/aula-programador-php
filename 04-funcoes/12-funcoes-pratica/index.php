@@ -28,3 +28,63 @@ function saudacaoPersonalizada (string $nome, string $saudacao = "seja muito bem
 saudacaoPersonalizada("Reis");
 saudacaoPersonalizada("Mery");
 
+function verificarMaiorIdade(int $anoNascimento){
+    $idade = 2026 - $anoNascimento;
+   if($idade < 18){
+    return false;
+   } else if($idade >= 18){
+    return true;
+   }
+}
+if(verificarMaiorIdade(2000) === true){
+    echo "<p>você é maior de idade!</p>";
+}else {
+    echo"<p>você é menor de idade!</p>";
+}
+if(verificarMaiorIdade(2010) === true){
+    echo "<p>você é maior de idade!</p>";
+}else {
+    echo"<p>você é menor de idade!</p>";
+}
+
+function calcularIdade2(int $anoNascimento, string $nome = ""){
+    $idade = 2026 - $anoNascimento;
+    return $idade;
+}
+$idadedaFabricia = calcularIdade2(1998, "Fabricia");
+echo calcularIdade2(2011) . " anos de idade";
+
+function echo_p(string $string){
+    echo "<p>{$string}</p>";
+}
+
+echo_p("eae fiote");
+echo_p("mensagem interressante");
+
+$comissao = 35000 * 0.2;
+
+echo "R$ " . number_format($comissao, 2, ",", ".");
+
+function calcularMedia(float $nota1, float $nota2, float $nota3, float $nota4){
+    return ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+
+
+$mediaDaEmilly = calcularMedia(10, 9, 8, 9);
+$mediaDoRyan = calcularMedia(6 ,7 ,10, 10);
+
+echo "<p>media da Emilly: </p>" . number_format($mediaDaEmilly, 1, ".");
+}
+
+$notasDaEmilly = [
+    10, 9, 10, 8
+];
+function calcularMedia2(array $notas){
+    $soma = 0;
+    foreach($notas as $nota){
+        $soma = $soma + $nota;
+    }
+    $media = $soma / count($notas);
+    return $media;
+}
+echo "<br>";
+echo calcularMedia2($notasDaEmilly);
