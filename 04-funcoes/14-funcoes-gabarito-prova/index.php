@@ -10,13 +10,7 @@
    QUESTÃO 1 — Sistema de Estoque
    Calcula o valor total de um produto em estoque (quantidade x preço).
    --------------------------------------------------------------------- */
-$produtoEmEstoque = 100;
-$precoProduto = 23;
-   function calcularValorEmEstoque(int $produtoEmEstoque, float $precoProduto){
-     return $produtoEmEstoque * $precoProduto;
-   };
-$valorTotal = calcularValorEmEstoque(100, 23);
-echo "<p>{$valorTotal}</p>";
+
 
 
 /* ---------------------------------------------------------------------
@@ -27,30 +21,12 @@ echo "<p>{$valorTotal}</p>";
 
 
 
-   function formatarValorGasto(float $bolsoFundo){
-      return number_format($bolsoFundo, 2 , ",", ".");
-   }
-   echo "R$", formatarValorGasto(4000000);
-
-
 /* ---------------------------------------------------------------------
    QUESTÃO 3 — Biblioteca Municipal
    Calcula a multa por atraso na devolução de um livro.
    Os 3 primeiros dias são tolerados sem cobrança.
    Cada dia de atraso além disso custa R$ 1,00.
    --------------------------------------------------------------------- */
-
-
-
-function calcularMulta(int $diasAtrasado){
-   if ($diasAtrasado > 3){
-      $cobranca = $diasAtrasado - 3
-      } if else($diasAtrasado <= 3){
-      $cobranca = 0;
-   }
-   return $cobranca;
-}
-echo calcularMulta(7);
 
 
 
