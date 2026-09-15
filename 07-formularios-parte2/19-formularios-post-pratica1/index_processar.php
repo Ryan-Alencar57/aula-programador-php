@@ -7,7 +7,9 @@ senacClassName("Prática — Processamento do Cadastro");
 
 <?php
 $contas = [
-    ["nome" => "Ana Souza", "email" => "ana@email.com", "senha" => "123456"],
+    ["nome" => "Ana Souza", "email" => "ana@email.com", "senha" => "123456"];
+    ["nome" => "Breno Silva", "email" => "brenho@email.com", "senha" => "abcdef"];
+    ["nome" => "Ryan Alencar", "email" => "alencar@email.com", "senha" => "2831RR"]
 ];
 
 // A lógica de cadastro será construída aqui, em aula, junto com a turma.
@@ -37,7 +39,6 @@ echo "<p>conta criada com sucesso!</p>";
 var_dump($contas);
 
 ?>
-
 <?php
 senacFooter("Pedro Leandro");
 ?>
