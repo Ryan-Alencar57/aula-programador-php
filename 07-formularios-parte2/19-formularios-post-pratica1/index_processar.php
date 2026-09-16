@@ -14,7 +14,7 @@ $contas = [
 
 // A lógica de cadastro será construída aqui, em aula, junto com a turma.
 
-$nome = $_POST["email"];
+$nome = $_POST["nome"];
 $email = $_POST["email"];
 $senha = $_POST["senha"];
 $confirmarSenha = $_POST["confirmarSenha"];
