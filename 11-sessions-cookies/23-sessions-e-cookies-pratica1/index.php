@@ -1,3 +1,19 @@
+<?php
+
+session_start()
+
+if(isset($_SESSION["email"])){
+    header("Location: area-restrita.php");
+    exit;
+}
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
