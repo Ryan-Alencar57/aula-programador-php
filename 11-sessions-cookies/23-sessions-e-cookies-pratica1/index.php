@@ -1,6 +1,9 @@
 <?php
 
-session_start()
+session_start();
+
+$mensagem = $_SESSION["mensagem"] ?? null;
+unset($_SESSION["mensagem"]);
 
 if(isset($_SESSION["email"])){
     header("Location: area-restrita.php");
@@ -29,6 +32,12 @@ if(isset($_SESSION["email"])){
         <div class="card-body p-4">
             <h1 class="h4 mb-4 text-center">Entrar</h1>
 
+                <?php if($mensagem): ?>
+                    <div class="alert alert-danger py02">
+                        <?= htmlspecialchars($mensagem); ?>
+                    </div>
+                <?php endif; ?>
+                 
             <form action="index_processar.php" method="POST">
                 <div class="mb-3">
                     <label for="email" class="form-label">E-mail</label>
